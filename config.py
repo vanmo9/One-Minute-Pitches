@@ -17,7 +17,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 
    
-    pass
+
 
 
 class ProdConfig(Config):

@@ -8,7 +8,7 @@ from app.models import User,Role
 #Creating app instance
 app = create_app('development')
 
-Manager = Manager(app)
+manager = Manager(app)
 manager.add_command('server',Server)
 
 
