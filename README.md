@@ -36,7 +36,7 @@ This is a python web application that allows users to pitch their ideas and can 
 * Git  
 
 
-## Contact Information
+## Contact Information 
 
 * Email (vanmowha@gmail.com)
 
