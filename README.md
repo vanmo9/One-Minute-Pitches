@@ -17,7 +17,15 @@ This is a python web application that allows users to pitch their ideas and can 
     '$ git clone <https://github.com/vanmo9/One-Minute-Pitches.git/>'
 
 
+## BDD
 
+| Behavior        | Output |
+| ------------- |:----:|
+| User sign-up | User gets an Email and new account is displayed |
+| User logins |  user is authenticated and home page is displayed|
+| User clicks on pitches button | Pitches forms are displayed|
+| User clicks on add pitches button | pitch is added to list of pitches and is displayed on users profile|
+| User clicks on profile | List of pitches craeted by the user are displayed|
 
 
 ## Technologies Used
