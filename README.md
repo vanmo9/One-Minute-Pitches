@@ -17,7 +17,7 @@ This is a python web application that allows users to pitch their ideas and can 
     '$ git clone <https://github.com/vanmo9/One-Minute-Pitches.git/>'
 
 
-## BDD 
+## BDD  
 
 | Behavior        | Output |
 | ------------- |:----:|
