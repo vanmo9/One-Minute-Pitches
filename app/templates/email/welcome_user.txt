@@ -1,0 +1,2 @@
+Hallo {{user.username}}
+Herzlich willkommen zu unserer Bewerbung. Ich hoffe, Sie werden Ihre Zeit mit unserer Bewerbung genießen. Vielen dank
