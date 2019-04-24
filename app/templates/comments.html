@@ -5,8 +5,8 @@
 <div class="container">
   {{wtf.quick_form(form)}}
 </div>
-{% for comments in comments %}
-{{ comments.comments }}
-{{ comments.title }}
+<p>{% for comments in comments %}</p>
+<p>By:{{ comments.comments }}</p>
+<p>{{ comments.title }}</p>
 {% endfor %}
 {% endblock %}
