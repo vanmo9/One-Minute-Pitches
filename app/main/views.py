@@ -21,7 +21,7 @@ def index():
 
 	
 
-@main.route('/new_pitch', methods = ['GET','POST'])
+@main.route('/pitches', methods = ['GET','POST'])
 @login_required
 def new_pitch():
 	form = PitchForm()
@@ -29,7 +29,7 @@ def new_pitch():
 		pitch = pitch (post=form.post.data,body=form.body.data,category=form.category.data)
 		pitch.save_pitch()
 		return redirect(url_for('main.index'))
-		return render_template('new_pyitch.html',form=form)
+		return render_template('pitches.html',form=form)
 
 
 

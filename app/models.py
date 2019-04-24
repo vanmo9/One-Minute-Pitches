@@ -64,7 +64,7 @@ class Pitches(UserMixin,db.Model):
     category = db.Column(db.String(255))
     posted = db.Column(db.DateTime,default=datetime.utcnow)
     user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
-    comment = db.relationship('Comment',backref = 'pitches',lazy = "dynamic")
+    comment = db.relationship('Comments',backref = 'pitches',lazy = "dynamic")
     
 
 
@@ -72,7 +72,7 @@ class Pitches(UserMixin,db.Model):
 
     def save_pitches(self):
         db.session.add(self)
-        db.session.cpmmit()
+        db.session.commit()
 
 
 
