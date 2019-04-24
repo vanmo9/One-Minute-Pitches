@@ -23,7 +23,7 @@ def index():
 	
 
 @main.route('/pitches', methods = ['GET','POST'])
-# @login_required
+@login_required
 def new_pitch():
 	form = PitchesForm()
 	if form.validate_on_submit():
@@ -31,6 +31,18 @@ def new_pitch():
 		pitch.save_pitches()
 		return redirect(url_for('main.index'))
 	return render_template('pitches.html',form=form)
+
+
+
+@main.route('/comments', methods = ['GET','POST'])
+@login_required
+def new_comments():
+	form = CommentForm()
+	if form.validate_on_submit():
+		comment = Comments (comment=form.comment.data)
+		comment.save_comments()
+		return redirect(url_for('main.index'))
+	return render_template('comments.html',form=form)	
 
 
 
