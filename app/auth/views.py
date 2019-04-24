@@ -19,7 +19,7 @@ def register():
 
         mail_message("Welcome to One-Minute-Pitches","email/welcome_user.html",user.email,user=user)
 
-
+ 
 
         return redirect(url_for('auth.login'))
         title = "New Account"
