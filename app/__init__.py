@@ -16,7 +16,7 @@ login_manager.login_view = 'auth.login'
 
 
 
-bootstrap = Bootstrap()
+bootstrap = Bootstrap() 
 db = SQLAlchemy()
 
 def create_app(config_name):
