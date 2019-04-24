@@ -13,23 +13,24 @@ def index():
 	'''
 	View root page function that returns the index page and its data
 	'''
+	index=Pitches.query.all()
 
 	
 
-	return render_template('index.html')
+	return render_template('index.html',index=index)
 
 
 	
 
 @main.route('/pitches', methods = ['GET','POST'])
-@login_required
+# @login_required
 def new_pitch():
-	form = PitchForm()
+	form = PitchesForm()
 	if form.validate_on_submit():
-		pitch = pitch (post=form.post.data,body=form.body.data,category=form.category.data)
-		pitch.save_pitch()
+		pitch = Pitches (body=form.body.data,category=form.category.data)
+		pitch.save_pitches()
 		return redirect(url_for('main.index'))
-		return render_template('pitches.html',form=form)
+	return render_template('pitches.html',form=form)
 
 
 

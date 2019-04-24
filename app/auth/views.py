@@ -17,7 +17,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome to One-Minute-Pitches","email/welcome_user.html",user.email,user=user)
+        mail_message("Welcome to One-Minute-Pitches","email/welcome_user",user.email,user=user)
 
  
 
