@@ -13,11 +13,11 @@ def index():
 	'''
 	View root page function that returns the index page and its data
 	'''
-	index=Pitches.query.all()
+	inde=Pitches.query.all()
 
 	
 
-	return render_template('index.html',index=index)
+	return render_template('index.html',index=inde)
 
 
 	
