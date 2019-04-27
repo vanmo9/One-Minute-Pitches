@@ -9,7 +9,7 @@ from ..email import mail_message
 
 
 # Registration route
-@auth.route('/register',methods = ["GET","POST"])
+@auth.route('/register',methods = ["GET","POST"])   
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
