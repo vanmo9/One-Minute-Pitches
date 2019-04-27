@@ -26,7 +26,7 @@ This is a python web application that allows users to pitch their ideas and can 
 | User clicks on pitches button | Pitches forms are displayed and User adds his/her pitch | Pitch is displayed in home page| 
 | User clicks on add pitches button | User adds his/her pitch | Pitch is added to list of pitches and is displayed on users profile|
 | User clicks on comment button | User adds his/her comment | Commented pitch is displayed in home page| 
-| User clicks on profile | ....... |  List of pitches craeted by the user are displayed|
+| User clicks on profile | ....... |  List of pitches created by the user is displayed|
 
 
 ## Technologies Used
