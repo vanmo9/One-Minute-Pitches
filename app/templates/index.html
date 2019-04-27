@@ -13,7 +13,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Code</h5>
+          <h1 class="card-title">Neymar</h1>
           <p class="card-text">Programs must be written for people to read, and only incidentally for machines to execute.</p>
           <p class="card-text"><small class="text-muted">Last updated 7 mins ago</small></p>
           <button type="button" class="btn btn-primary"><a href ="/pitches">Add Pitch</a></button>
@@ -30,30 +30,34 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Motive</h5>
+          <h1 class="card-title">Pogba</h1>
           <p class="card-text">Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           <button type="button" class="btn btn-primary"><a href ="/pitches">Add Pitch</a></button>
+          <button type="button" class="btn btn-primary"><a href ="/comments">Comment</a></button>
         </div>
       </div>
     </div>
 </div>
 
 {% for x in index %}
+
+
 <div class="card mb-3" style="max-width: 540px;">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="https://fmdataba.com/images/p/4348.png" class="card-img" alt="pogba">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-            {{x.body}}
-            {{x.category}}
-           
-          <button type="button" class="btn btn-primary"><a href ="/pitches">Add Pitch</a></button>
-        </div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://fmdataba.com/images/p/4348.png" class="card-img" alt="pogba">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="card-title">{{x.body}}</h1>
+        <p class="card-text">{{x.category}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <button type="button" class="btn btn-primary"><a href ="/pitches">Add Pitch</a></button>
+        <button type="button" class="btn btn-primary"><a href ="/comments">Comment</a></button>
       </div>
     </div>
+  </div>
 </div>
 
 
