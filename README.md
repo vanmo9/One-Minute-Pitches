@@ -19,12 +19,13 @@ This is a python web application that allows users to pitch their ideas and can 
 
 ## BDD  
 
-| Behavior        | Output |
-| ------------- |:----:|
-| User sign-up | User gets an Email and new account is displayed |
-| User logins |  user is authenticated and home page is displayed|
-| User clicks on pitches button | Pitches forms are displayed|
-| User clicks on add pitches button | pitch is added to list of pitches and is displayed on users profile|
+| BEHAVIOUR | INPUT | OUTPUT|
+|:------------------|:--------|:-----------|
+| User sign-up | User puts his/her email, username and password |  User gets an Email and new account is created |
+| User logins | User puts his/her account email and password | User is authenticated and home page is displayed|
+| User clicks on pitches button | Pitches forms are displayed and User adds his/her pitch | Pitch is displayed in home page| 
+| User clicks on add pitches button | User adds his/her pitch | Pitch is added to list of pitches and is displayed on users profile|
+| User clicks on comment button | User adds his/her comment | Commented pitch is diplayed in home page| 
 | User clicks on profile | List of pitches craeted by the user are displayed|
 
 
