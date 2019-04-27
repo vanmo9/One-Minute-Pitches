@@ -1,7 +1,9 @@
 import os 
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://mohamed:mohassan10@localhost/mo'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://mohamed:911@localhost/mo'
+   
+
 
     #  email configurations
 

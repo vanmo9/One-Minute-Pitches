@@ -36,7 +36,7 @@ def new_pitch():
 
 @main.route('/comments', methods = ['GET','POST'])
 @login_required
-def new_comments():
+def new_comment():
 	form = CommentForm()
 	if form.validate_on_submit():
 		comment = Comments (comment=form.comment.data)
